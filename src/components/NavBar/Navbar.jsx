@@ -17,7 +17,7 @@ function Navbar() {
         <button className='desktopMenuBtn' onClick={()=>{
           document.getElementById ('contact').scrollIntoView({behavior:'smooth'})
         }}>
-        <i class="fa-regular fa-message"></i> <span style={{paddingLeft:"10px"}} > Contact Me</span> </button>
+        <i class="fa-regular fa-message"></i> <span style={{paddingLeft:"10px"}} > Contact me</span> </button>
         <img src={menu} alt='Menu' className='mobMenu' style={{height:"100px", width:"150px"}}onClick={()=>setShowMenu(!showMenu)}/>
         <div className='navMenu' style={{display: showMenu?' flex': 'none'}}>
           <Link activeClass='active' to= 'intro' spy={true} smmoth={true} offset= {-100} duration={500} className='ListItem'onClick={()=>setShowMenu(false)}>Home</Link>
